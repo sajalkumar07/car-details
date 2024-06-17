@@ -6,7 +6,7 @@ import { cars } from '../data';  // Adjusted path
 const CarDetails = () => {
   const { id } = useParams();
   const navigate = useNavigate();
-  const car = cars.find(car => car.id === parseInt(id));
+
 
   const handleBack = () => {
     navigate('/');
