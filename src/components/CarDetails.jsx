@@ -39,7 +39,7 @@ const CarDetails = () => {
       ) : car ? (
         <div>
           <h2>{car.make} {car.model}</h2> {/* Display model in parentheses */}
-          <p>Price - {car.price}</p>
+          <p>Price - {car.price}$ </p>
           <p>Fule Type - {car.fuelType}</p>
           <p>Transmission - {car.transmission}</p>
           <p>Engine - {car.engine}</p>
