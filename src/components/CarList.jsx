@@ -34,7 +34,7 @@ const CarList = () => {
         <>
           {cars.map(car => (
             <li key={car.id}>
-              <Link style={none} to={`/car/${car.id}`}>
+              <Link to={`/car/${car.id}`}>
                 {car.make} {car.model} - {car.price}$
               </Link>
             </li>
