@@ -4,7 +4,16 @@ import { useParams, useNavigate } from 'react-router-dom';
 import { cars } from '../data';  // Adjusted path
 
 const CarDetails = () => {
-  const { id } = 
+  const { id } = useParams();
+  const navigate = useNaviate();
+  const car = cars.find(car => car.id === parseInt(id));
+
+  const handleBack = () => {
+    navigate('/');
+  };
+
+  return (
+    <div>
       <h1>Car Details</h1>
       {car ? (
         <div>

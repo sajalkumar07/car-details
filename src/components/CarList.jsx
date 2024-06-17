@@ -1,6 +1,11 @@
 // src/components/CarList.jsx
 import React from 'react';
-import { Lin
+import { Link } from 'react-router-dom';
+import { cars } from '../data';  // Adjusted path
+
+const CarList = () => {
+  return (
+    <div>
       <h1>Car Listing</h1>
       <ul>
         {cars.map(car => (
